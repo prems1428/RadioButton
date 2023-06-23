@@ -1,0 +1,40 @@
+h2{
+    text-align: center;
+    color: bisque;
+    font-weight: bold;
+    font-size:xx-large;
+}
+.error{
+    color:red;
+    text-align: center;
+}
+.container {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: aquamarine;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    background-color: aquamarine;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  button{
+    margin-right: 1px;
+    }
+  .required{
+    display: flex;
+  }
+  input[type="text"],
+  input[type="email"] {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }

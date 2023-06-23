@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2>Registration</h2>
+        <form [formGroup]="profileForm" (ngSubmit)="onRegSubmit()">
+          <div class="form-group">
+            <label for="name">Name :</label>
+            <input formControlName="Name" [ngClass]="{'is-invalid':submitted && profileForm.controls['Name'].errors}" type="text" class="form-control">
+          </div>
+  
+          <div class="form-group">
+            <label for="name">Age :</label>
+            <input formControlName="Age" [ngClass]="{'is-invalid':submitted && profileForm.controls['Age'].errors}" type="text" class="form-control">
+          </div>
+  
+          <div class="form-group">
+            <label for="name">Contact :</label>
+            <input formControlName="Contact" [ngClass]="{'is-invalid':submitted && profileForm.controls['Contact'].errors}" type="text" class="form-control">
+          </div>
+         
+          <div class="form-group">
+            <label for="name">Username :</label>
+            <input formControlName="username" [ngClass]="{'is-invalid':submitted && profileForm.controls['username'].errors}" type="text" placeholder="minimum 6 characters" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="name">Email :</label>
+            <input formControlName="Email" [ngClass]="{'is-invalid':submitted && profileForm.controls['Email'].errors}" type="email" class="form-control">
+              <div *ngIf="emailExists">Email already exists.</div>
+            
+          </div>
+          
+          <div class="form-group">
+            <label for="name">Password :</label>
+            <input formControlName="password" [ngClass]="{'is-invalid':submitted && profileForm.controls['password'].errors}" type="text" placeholder="minimum 8 characters" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <button class="btn btn-primary">
+              Submit
+            </button>
+          </div>
+        
+        </form>
+      </div>
+    </div>
+  </div>
